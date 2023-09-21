@@ -1,7 +1,7 @@
 #counterText {
     color: black;
     font-family: consolas,arial,sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     }
 
@@ -15,7 +15,7 @@
     }
     
     #favoriteColorBox {
-        background-color: #800000;
+        background-color: black;
         line-height: 100px;
         text-align: center;
         color: white;
@@ -23,9 +23,37 @@
         padding-right: 20px; /* add space to the right side */
     }
     
-
-    .no-gutters>.col {
-        padding: 2px;
+    .color-btn {
+        margin: 1px;
+        padding: 10px;
+    }
+    
+    #blue{
+        background-color: blue;
     }
 
+    #green{
+        background-color: green;
+    }
+
+    #red{
+        background-color: red;
+    }
+
+    #purple{
+        background-color: purple;
+    }
+
+    .custom-navbar {
+        background-color: #800000; 
+    }
+
+    .custom-text{
+            color: white !important; 
+    }
+
+    .ctr-btn{
+        background-color: #800000; /* Light blue color */
+    }
+    
     
