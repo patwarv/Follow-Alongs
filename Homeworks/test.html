@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css' integrity='sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==' crossorigin='anonymous'/>
+    
+    <title>Modified Counter App</title>
+    <style>
+        #textBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;    /* Example width */
+        height: 100px;   /* Example height */
+        border: 1px solid black; /* Example border to visualize the box */
+        }
+
+        #favoriteColorContainer {
+            width: 200px;
+            margin: 20px;
+        }
+
+        #favoriteColorBox {
+            background-color: #800000;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .no-gutters>.col {
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Favorite Things</a>
+        </div>
+    </nav>
+
+    <div class="container page-container">
+        <h2 class="mt-4">Counter</h2>
+        <div id="textBox" >0</div>
+        <div class="row">
+            <div class="col-md-6"><button class="btn btn-secondary w-100" onclick="increase()">Incrment</button></div>
+            <div class="col-md-6"><button class="btn btn-secondary w-100" onclick="decrease()">Decrement</button></div>
+            <div class="col-md-6"><button class="btn btn-secondary w-100" onclick="reset()">Reset</button></div>
+
+        </div>
+        <hr>
+        <h2>Favorite Color</h2>
+        <div id="favoriteColorContainer">
+            <div id="favoriteColorBox">Favorite Color</div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-3"><button class="btn btn-secondary w-100" onclick="changeColor('blue')">Blue</button></div>
+            <div class="col-md-3"><button class="btn btn-secondary w-100" onclick="changeColor('red')">Red</button></div>
+            <div class="col-md-3"><button class="btn btn-secondary w-100" onclick="changeColor('green')">Green</button></div>
+            <div class="col-md-3"><button class="btn btn-secondary w-100" onclick="changeColor('yellow')">Yellow</button></div>
+        </div>
+        <hr>
+    </div>
+
+    <script>
+        function increase() {
+            let textBox = document.getElementById("textBox");
+            textBox.textContent = parseInt(textBox.textContent) + 1;
+        }
+
+        function decrease() {
+            let textBox = document.getElementById("textBox");
+            textBox.textContent = parseInt(textBox.textContent) - 1;
+        }
+
+        function decrease() {
+            let textBox = document.getElementById("textBox");
+            textBox.textContent = 0;
+        }
+
+        function changeColor(color) {
+            let colorBox = document.getElementById("favoriteColorBox");
+            colorBox.style.backgroundColor = color;
+
+            if (color === 'blue') {
+                colorBox.textContent = 'Favorite: Blue';
+            } else if (color === 'red') {
+                colorBox.textContent = 'Favorite: Red';
+            } else if (color === 'green') {
+                colorBox.textContent = 'Favorite: Green';
+            } else if (color === 'purple') {
+                colorBox.textContent = 'Favorite: Yellow';
+            }
+        }
+    </script>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js' integrity='sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==' crossorigin='anonymous'></script>        
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js' integrity='sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==' crossorigin='anonymous'></script>
+</body>
+</html>
