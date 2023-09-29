@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Owl Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- Wrapper for flex layout -->
+    <div class="content-wrapper d-flex flex-column">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <a class="navbar-brand" href="#">Hogwarts Owl Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MAIN -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Owl Image Card -->
+                <div class="col-md-5 order-md-1 d-flex justify-content-end">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/owl1.jpg" class="card-img-top" alt="Owl Image" id="owlImage">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" id="owlName">Owl 1</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button and Text -->
+                <div class="col-md-7 order-md-2 d-flex flex-column justify-content-center align-items-end pr-5">
+                    <h2 class="text-center mb-4">We provide mail and commercial services for Hogwarts</h2>
+                    <div class="d-flex justify-content-center w-100">
+                        <button class="btn btn-primary mb-2 btn-fixed" onclick="changeOwl()">Change Owl</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <footer class="mt-auto">
+            <div class="container text-center">
+                <i class="fab fa-facebook mx-2"></i>
+                <i class="fab fa-twitter mx-2"></i>
+                <i class="fab fa-instagram mx-2"></i>
+                <i class="fab fa-linkedin mx-2"></i>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js" async defer></script>
+
+
+
+</body>
+
+</html>
