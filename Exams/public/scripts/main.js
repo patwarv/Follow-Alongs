@@ -3,7 +3,7 @@ let currentOwl = 1;
 function changeOwl() {
     currentOwl++;
 
-    if (currentOwl > 3) { // Assuming 3 owl images
+    if (currentOwl > 3) { 
         currentOwl = 1;
     }
 
