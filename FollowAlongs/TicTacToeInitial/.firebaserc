@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "tic-tac-toe-511eb"
+  },
+  "targets": {
+    "tic-tac-toe-511eb": {
+      "hosting": {
+        "01": [
+          "tic-tac-toe-511eb"
+        ],
+        "02": [
+          "tic-tac-toe-two2"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
