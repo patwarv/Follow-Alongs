@@ -10,6 +10,9 @@
         ],
         "02": [
           "tic-tac-toe-two2"
+        ],
+        "03": [
+          "carselector"
         ]
       }
     }

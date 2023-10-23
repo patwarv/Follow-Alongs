@@ -17,6 +17,15 @@
         "**/.*",
         "**/node_modules/**"
       ]
+    },
+    {
+      "target": "03",
+      "public": "Car_Selector/public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
     }
   ]
 }
